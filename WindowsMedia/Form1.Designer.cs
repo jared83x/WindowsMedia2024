@@ -29,20 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            wmReproductor = new AxWMPLib.AxWindowsMediaPlayer();
             label1 = new Label();
             cboListaCanales = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
+            lblCanal = new Label();
+            lblURL = new Label();
+            btnReproducir = new Button();
+            ((System.ComponentModel.ISupportInitialize)wmReproductor).BeginInit();
             SuspendLayout();
             // 
-            // axWindowsMediaPlayer1
+            // wmReproductor
             // 
-            axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(12, 8);
-            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
-            axWindowsMediaPlayer1.Size = new Size(783, 428);
-            axWindowsMediaPlayer1.TabIndex = 0;
+            wmReproductor.Enabled = true;
+            wmReproductor.Location = new Point(12, 8);
+            wmReproductor.Name = "wmReproductor";
+            wmReproductor.OcxState = (AxHost.State)resources.GetObject("wmReproductor.OcxState");
+            wmReproductor.Size = new Size(783, 428);
+            wmReproductor.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,26 +64,61 @@
             cboListaCanales.Name = "cboListaCanales";
             cboListaCanales.Size = new Size(166, 28);
             cboListaCanales.TabIndex = 2;
+            cboListaCanales.SelectedIndexChanged += cboListaCanales_SelectedIndexChanged;
+            // 
+            // lblCanal
+            // 
+            lblCanal.AutoSize = true;
+            lblCanal.Location = new Point(388, 460);
+            lblCanal.Name = "lblCanal";
+            lblCanal.Size = new Size(50, 20);
+            lblCanal.TabIndex = 3;
+            lblCanal.Text = "label2";
+            // 
+            // lblURL
+            // 
+            lblURL.AutoSize = true;
+            lblURL.Location = new Point(388, 489);
+            lblURL.Name = "lblURL";
+            lblURL.Size = new Size(50, 20);
+            lblURL.TabIndex = 4;
+            lblURL.Text = "label3";
+            // 
+            // btnReproducir
+            // 
+            btnReproducir.Location = new Point(530, 450);
+            btnReproducir.Name = "btnReproducir";
+            btnReproducir.Size = new Size(149, 46);
+            btnReproducir.TabIndex = 5;
+            btnReproducir.Text = "Reproducir";
+            btnReproducir.UseVisualStyleBackColor = true;
+            btnReproducir.Click += btnReproducir_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 536);
+            Controls.Add(btnReproducir);
+            Controls.Add(lblURL);
+            Controls.Add(lblCanal);
             Controls.Add(cboListaCanales);
             Controls.Add(label1);
-            Controls.Add(axWindowsMediaPlayer1);
+            Controls.Add(wmReproductor);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)wmReproductor).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private AxWMPLib.AxWindowsMediaPlayer wmReproductor;
         private Label label1;
         private ComboBox cboListaCanales;
+        private Label lblCanal;
+        private Label lblURL;
+        private Button btnReproducir;
     }
 }
