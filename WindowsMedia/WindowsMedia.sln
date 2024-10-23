@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsMedia", "WindowsMedia.csproj", "{468B6F8F-2276-446C-BA6F-BF0A06CB9D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsMedia", "WindowsMedia.csproj", "{468B6F8F-2276-446C-BA6F-BF0A06CB9D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "windowsmediasamples", "..\windowsmediasamples\windowsmediasamples.csproj", "{81ED559C-C6F5-407B-A98C-54655B3D6ACF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{468B6F8F-2276-446C-BA6F-BF0A06CB9D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468B6F8F-2276-446C-BA6F-BF0A06CB9D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468B6F8F-2276-446C-BA6F-BF0A06CB9D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81ED559C-C6F5-407B-A98C-54655B3D6ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81ED559C-C6F5-407B-A98C-54655B3D6ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81ED559C-C6F5-407B-A98C-54655B3D6ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81ED559C-C6F5-407B-A98C-54655B3D6ACF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
